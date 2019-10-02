@@ -1,0 +1,7 @@
+[*]
+insert_final_newline = true
+indent_size = 4
+indent_style = space
+
+[*.{js,json,svelte,css,html}]
+indent_size = 2

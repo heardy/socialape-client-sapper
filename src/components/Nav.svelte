@@ -3,6 +3,10 @@
 </script>
 
 <style>
+  .wrapper {
+    height: 57px;
+  }
+
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
@@ -49,24 +53,26 @@
 	}
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="wrapper">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item {segment === 'login' ? 'active' : ''}">
-        <a class="nav-link" href="login">Login</a>
+          <a class="nav-link" href="login">Login</a>
       </li>
       <li class="nav-item {segment === undefined ? 'active' : ''}">
-        <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item {segment === 'signup' ? 'active' : ''}">
-        <a class="nav-link" href="signup">Signup</a>
+          <a class="nav-link" href="signup">Signup</a>
       </li>
     </ul>
   </div>
-</nav>
+  </nav>
+</div>
 
 <!-- <nav class="navbar fixed-top navbar-dark bg-primary">
 	<ul class="navbar-nav">

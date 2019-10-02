@@ -4,11 +4,14 @@
 
 <style>
   .card {
-      margin-bottom: 20px;
+    /* height: 100px; */
+    margin-bottom: 20px;
   }
 
   .card-img {
-      min-width: 200px;
+    height: 142px;
+    min-width: 200px;
+    object-fit: cover;
   }
 </style>
 
