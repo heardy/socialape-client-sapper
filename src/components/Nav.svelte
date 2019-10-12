@@ -16,7 +16,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		/* margin: auto; */
+		margin: auto;
 	}
 
 	/* clearfix */

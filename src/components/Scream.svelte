@@ -1,4 +1,9 @@
 <script>
+  import dayjs from 'dayjs';
+  import relativeTime from 'dayjs/plugin/relativeTime'
+
+  dayjs.extend(relativeTime);
+
   export let scream = {};
 </script>
 
@@ -12,6 +17,7 @@
     height: 142px;
     min-width: 200px;
     object-fit: cover;
+    object-position: top;
   }
 </style>
 
@@ -26,7 +32,7 @@
         <h5 class="card-title">
           <a href="{`/users/${scream.userHandle}`}">{scream.userHandle}</a>
         </h5>
-        <p class="card-text">{scream.createdAt}</p>
+        <p class="card-text">{dayjs(scream.createdAt).fromNow()}</p>
         <p class="card-text">{scream.body}</p>
       </div>
     </div>
